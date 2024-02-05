@@ -1,0 +1,29 @@
+input {
+  padding: 0.5em 1em;
+  font-size: var(--font-size-md);
+  color: var(--text-input-font-color);
+  border-radius: var(--text-input-border-radius);
+  border-style: var(--text-input-border-style);
+  border-width: var(--text-input-border-width);
+  border-color: var(--text-input-border-color);
+
+  &:focus {
+    border-color: var(--text-input-border-color-focus);
+  }
+
+  &.size-xs {
+    font-size: 0.5rem;
+  }
+  &.size-sm {
+    font-size: 0.75rem;
+  }
+  &.size-md {
+    font-size: 1rem;
+  }
+  &.size-lg {
+    font-size: 1.25rem;
+  }
+  &.size-xl {
+    font-size: 1.5rem;
+  }
+}

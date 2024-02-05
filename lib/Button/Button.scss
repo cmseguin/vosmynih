@@ -1,0 +1,110 @@
+button {
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: 1em;
+
+  &.size-xs {
+    font-size: 0.5rem;
+  }
+  &.size-sm {
+    font-size: 0.75rem;
+  }
+  &.size-md {
+    font-size: 1rem;
+  }
+  &.size-lg {
+    font-size: 1.25rem;
+  }
+  &.size-xl {
+    font-size: 1.5rem;
+  }
+}
+
+.variant-contained {
+  padding: 0.5em 1.5em;
+
+  border: 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-button-contained);
+
+  transition: background-color 250ms, color 250ms;
+
+  &.appearance-primary {
+    background: var(--color-button-primary);
+    color: var(--color-text-on-primary);
+
+    &:hover {
+      background: var(--color-button-primary-hover);
+    }
+  }
+  
+  &.appearance-secondary {
+    background: var(--color-button-secondary);
+    color: var(--color-text-on-secondary);
+
+    &:hover {
+      background: var(--color-button-secondary-hover);
+    }
+  }
+
+  &.appearance-inherit {
+    background: var(--color-button-inherit);
+    color: var(--color-button-text-inherit);
+
+    &:hover {
+      background: var(--color-button-inherit-hover);
+    }
+  }
+}
+
+.variant-outlined {
+  padding: 0.5em 1.5em;
+
+  border: 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-button-contained);
+  background: transparent;
+  transition: border-color 250ms, color 250ms;
+
+  &.appearance-primary {
+    border-color: var(--color-button-primary);
+    color: var(--color-button-primary);
+
+    &:hover {
+      border-color: var(--color-button-primary-hover);
+      color: var(--color-button-primary-hover);
+    }
+  }
+  
+  &.appearance-secondary {
+    border-color: var(--color-button-secondary);
+    color: var(--color-button-secondary);
+
+    &:hover {
+      border-color: var(--color-button-secondary-hover);
+      color: var(--color-button-secondary-hover);
+    }
+  }
+
+  &.appearance-inherit {
+    border-color: var(--color-button-inherit);
+    color: var(--color-button-text-inherit);
+
+    &:hover {
+      border-color: var(--color-button-inherit-hover);
+      color: var(--color-button-inherit-hover);
+    }
+  }
+}
+
+.variant-text {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
